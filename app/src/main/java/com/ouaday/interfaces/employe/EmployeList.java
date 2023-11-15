@@ -55,7 +55,7 @@ public class EmployeList extends AppCompatActivity {
         });
     }
     public void getProfesseur(){
-        String getSUrl = "http://192.168.43.91:8080/api/employe";
+        String getSUrl = "http://192.168.11.167:8080/api/employe";
         requestQueue = Volley.newRequestQueue(getApplicationContext());
         JsonArrayRequest request = new JsonArrayRequest(Request.Method.GET,
                 getSUrl, null, new Response.Listener<JSONArray>() {

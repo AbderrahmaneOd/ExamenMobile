@@ -62,7 +62,7 @@ public class AddEmploye extends AppCompatActivity {
     }
 
     private void getServices() {
-        String getFUrl = "http://192.168.43.91:8080/api/service";
+        String getFUrl = "http://192.168.11.167:8080/api/service";
 
         requestQueue = Volley.newRequestQueue(getApplicationContext());
         JsonArrayRequest request = new JsonArrayRequest(Request.Method.GET,
@@ -119,7 +119,7 @@ public class AddEmploye extends AppCompatActivity {
 
 
     public void submitEmploye() {
-        String insertUrl = "http://192.168.43.91:8080/api/employe";
+        String insertUrl = "http://192.168.11.167:8080/api/employe";
         JSONObject jsonBody = new JSONObject();
         try {
 
